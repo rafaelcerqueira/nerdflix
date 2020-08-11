@@ -1,21 +1,34 @@
 import styled from 'styled-components';
 import ButtonNerdflix from '../ButtonNerdflix';
 import LogoNerdflix from '../LogoNerdflix';
+import container from '../../tools/container';
 
-const HeaderNerdflix = styled.header`
+export const HeaderNerdflix = styled.header`
+
+    background-color: var(--color-black-dark);
+    border-bottom: 4px solid var(--color-blue-sky);
+    padding: 20rem 0;
+
+    @media(max-width: 800px) {
+        
+        padding: 15rem 16rem;
+
+        
+
+    }
+`;
+
+export const Wrapper = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20rem 30rem;
-    background-color: var(--color-black-dark);
-    border-bottom: 4px solid var(--color-blue-sky);
+    ${container};
 
     @media(max-width: 800px) {
         justify-content: center;
-        padding: 15px 16px;
 
         & > ${LogoNerdflix} {
-
+            height: 35px;
         }
 
         & > ${ButtonNerdflix} {
@@ -29,8 +42,8 @@ const HeaderNerdflix = styled.header`
             right: 0;
             width: 100vw;
         }
-
     }
-`;
 
-export default HeaderNerdflix;
+
+
+`
