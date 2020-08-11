@@ -12,7 +12,7 @@ const FooterNerdflix = styled.footer `
     border-top: 4px solid var(--color-blue-sky);
 
     & > ${LogoNerdflix} {
-        margin-bottom: 20rem;
+        margin-bottom: 10rem;
 
     }
 
