@@ -10,6 +10,7 @@ import TitleNerdflix from './components/TitleNerdflix';
 import DescriptionNerdflix from './components/DescriptionNerdflix';
 import ThumbNerdflix from './components/ThumbNerdflix';
 import ConhecaAlura from '../src/assets/img/ConhecaAlura.png';
+import AluraAvatar from './assets/img/AluraLogo.png'
 
 // JSX = JavaScript XML
 function App() {
@@ -32,7 +33,12 @@ function App() {
           </DescriptionNerdflix>
         </Text>
 
-        <ThumbNerdflix src={ConhecaAlura} alt="Thumb do Conheça a Alura"/>
+        <ThumbNerdflix 
+        src={ConhecaAlura} 
+        alt="Thumb do Conheça a Alura"
+        avatar={AluraAvatar}
+        channelName="Alura"
+        />
       </BannerNerdflix>
 
       <FooterNerdflix>
