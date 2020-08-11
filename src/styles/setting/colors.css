@@ -2,4 +2,19 @@
     --color-blue-sky: #4c97fa;
     --color-black-dark: #000;
     --color-yellow-yellow: #fcfa7c;
+
+    --color-frontend: #6BD1FF;
+    --color-infra: #9CD33B;
+    --color-backend: #00C86F;
+    --color-marketing: #6B5BE2;
+    --color-mobile: #ffba05;
+    --color-inovation: #ff8c2a;
+    --color-ux: #dc6ebe;
+    --color-data-science: #9cd33b;
+    
+    --color-error-dark: #C62828;
+    --color-error-medium: #e53935;
+    --color-error-light: #fce7e7;
+    
+
 }

@@ -8,12 +8,11 @@ const FooterNerdflix = styled.footer `
     font-size: 16rem;
     background-color: var(--color-black-dark);
     color: var(--color-yellow-yellow);
-    padding: 20rem 0;
+    padding: 12rem 0;
     border-top: 4px solid var(--color-blue-sky);
 
     & > ${LogoNerdflix} {
         margin-bottom: 10rem;
-
     }
 
 `;

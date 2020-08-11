@@ -3,9 +3,9 @@ import HeaderNerdflix from './components/HeaderNerflix';
 import LogoNerdflix from './components/LogoNerdflix';
 import ButtonNerdflix from './components/ButtonNerdflix';
 import FooterNerdflix from './components/FooterNerdflix';
-import LinkNerdflix from './components/LinkNerdflix';
-import HighLightNerdflix from './components/HighLightNerdflix';
 import LogoImersao from './components/LogoImersao';
+import BannerNerdflix from './components/BannerNerdflix';
+import TagNerdflix from './components/TagNerdflix';
 
 // JSX = JavaScript XML
 function App() {
@@ -17,6 +17,10 @@ function App() {
           <ButtonNerdflix>Novo Vídeo</ButtonNerdflix>
 
       </ HeaderNerdflix>
+
+      <BannerNerdflix>
+        <TagNerdflix>FrontEnd</TagNerdflix>
+      </BannerNerdflix>
 
       <FooterNerdflix>
 
