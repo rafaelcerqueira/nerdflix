@@ -36,6 +36,7 @@ function App() {
         <ThumbNerdflix 
         src={ConhecaAlura} 
         alt="Thumb do Conheça a Alura"
+        title="Conheça o canal da Alura!"
         avatar={AluraAvatar}
         channelName="Alura"
         />

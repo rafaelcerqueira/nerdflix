@@ -1,19 +1,19 @@
 import styled from 'styled-components';
+import { WrapperAvatar } from '../AvatarNerdflix/styles';
 
-
-
-
-export const Avatar = styled.img `
+export const Title = styled.figcaption`
     position: absolute;
-    top: var(--space);
     left: var(--space);
-    width: 50rem;
-    height: 50rem;
-    border-radius: 50%;
-    border: 2rem solid var(--color-yellow-yellow);
-    transform: translateX(calc((100% + var(--space)) * -1));
+    bottom: var(--space);
+    font-size: 25rem;
+    color: var(--color-yellow-yellow);
+    font-weight: 300;
+    text-shadow: 1px 1px 1px var(--color-black-dark);
+    background-color: var(--color-black-medium);
+    padding: 4rem 6rem;
+    transform: translateY(calc((100% + var(--space)) * -1) );
     opacity: 0;
-    transition: transform 190ms linear, opacity 100ms linear;
+    transition: transform 125ms  150ms linear, opacity 290ms 100ms linear; 
 `;
 
 export const Thumb = styled.img `
@@ -30,6 +30,16 @@ export const WrapperThumb = styled.figure `
     overflow: hidden;
     cursor: pointer;
     transition: transform 100ms linear;
+
+    & > ${WrapperAvatar} {
+        position: absolute;
+        top: var(--space);
+        left: var(--space);
+        margin-right: var(--space);
+        transform: translateX(calc((100% + var(--space)) * -1));
+        opacity: 0;
+        transition: transform 190ms linear, opacity 100ms linear;
+    }
 `;
 
 export const Background = styled.div`
@@ -79,12 +89,22 @@ export const Background = styled.div`
 
         & > ${WrapperThumb} {
             transform: translate(var(--move-space), var(--move-space));
-            
-            & > ${Avatar} {
+
+            & > ${Thumb} {
+                filter: brightness(0.7);
+            }
+
+            & > ${WrapperAvatar} {
                 transform: translateX(0);
                 opacity: 1;
-                transition: transform 125ms  150ms linear, opacity 290ms 100ms linear;
-            }   
+                transition: transform 125ms  125ms linear, opacity 290ms 100ms linear;
+            }
+            
+            & > ${Title} {
+                transform: translateY(0);
+                opacity: 1;
+                transition: transform 125ms  125ms linear, opacity 290ms 100ms linear;
+            }
         }
     }
 `;
