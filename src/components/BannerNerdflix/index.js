@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import container from '../../tools/container';
 import TagNerdflix from '../TagNerdflix';
 import TitleNerdflix from '../TitleNerdflix';
-import ThumbNerdflix from '../ThumbNerdflix';
+// import ThumbNerdflix from '../ThumbNerdflix';
 
 export const Text = styled.div `
     padding-top: 10rem;

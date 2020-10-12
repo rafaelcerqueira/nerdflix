@@ -8,6 +8,18 @@ const ButtonNerdflix = styled.button `
     border-radius: 5px;
     font-size: 14rem;
     cursor: pointer;
+    text-decoration: none;
+    transition: background-color 200ms linear,transform 200ms cubic-bezier(0,0,1,2);
+
+    &:hover {
+        background-color: var(--color-blue-sky);
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transition: background-color 200ms linear, transform 100ms linear;
+        transform: scale(0.95);
+    }
 
 `;
 
