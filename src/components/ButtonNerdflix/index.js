@@ -6,6 +6,7 @@ const ButtonNerdflix = styled.button `
     color: var(--color-yellow-yellow);
     border: 2px solid var(--color-blue-sky);
     border-radius: 5px;
+    font-family: 'Russo One';
     font-size: 14rem;
     cursor: pointer;
     text-decoration: none;
